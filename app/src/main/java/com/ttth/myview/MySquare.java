@@ -21,7 +21,7 @@ public class MySquare extends View {
     private int xLeft,yTop, xRight,yBottom,  radius;
     private float xLeftChange, yTopChange, xRightChange, yBottomChange, xChange, yChange, raidusChange;
     private float startX, startY;
-    private Rect rect = getRect();
+    private Rect rect ;
     private int x,y;
     private int width = 200;
 
@@ -112,8 +112,8 @@ public class MySquare extends View {
                 yTop = yTop - (int)dx;
                 break;
             case 1:
-                xLeft = (int) xMove;
-                yTop = (int)xMove;
+                xLeft = x + (int)dx;
+                yTop = y + (int)dx;
 
                 break;
         }
